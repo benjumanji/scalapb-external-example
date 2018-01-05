@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package io.artfuldodge.boop;
+
+service Boop {
+  rpc Boop (BoopRequest) returns (BoopResponse) {}
+}
+
+message BoopRequest {
+  string name = 1;
+}
+
+message BoopResponse {
+  string message = 1;
+}
